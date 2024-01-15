@@ -21,7 +21,7 @@ useragent = "Mozilla/5.0 (Linux; Android 11; SM-M017F Build/PPR1.180610.011; wv)
 opener.addheaders = [("User-agent", useragent)]
 
 
-@app.on_message(filters.command(["google"]) & ~filters.private)
+@register(pattern="^/google (.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -52,7 +52,7 @@ async def _(event):
     )
 
 
-@app.on_message(filters.command(["img"]) & ~filters.private)
+@register(pattern="^/img (.*)")
 async def img_sampler(event):
     if event.fwd_from:
         return
