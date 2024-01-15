@@ -71,9 +71,8 @@ GROUP_START_BTN = [
 
 ALIVE_BTN = [
     [
-        ib(text="UPDATES", url="https://t.me/Hydra_Updates"),
-        ib(text="SUPPORT", url="https://t.me/hydraXsupport"),
-    ],
+        ib(text="UPDATES", url="https://t.me/ThENiGhTStarS"),
+            ],
     [
         ib(
             text="⇦ ADD ME ⇨",
@@ -83,7 +82,7 @@ ALIVE_BTN = [
 ]
 
 HELP_STRINGS = """
-🫧 *Yae-Miko* 🫧
+🫧 *RabbitX* 🫧
 
 ☉ *Here, you will find a list of all the available commands.*
 
