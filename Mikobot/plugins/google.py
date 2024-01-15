@@ -13,6 +13,7 @@ from PIL import Image
 from search_engine_parser import GoogleSearch
 
 from Mikobot import tbot
+from Mikobot import app
 from Mikobot.events import register
 
 opener = urllib.request.build_opener()
@@ -20,7 +21,7 @@ useragent = "Mozilla/5.0 (Linux; Android 11; SM-M017F Build/PPR1.180610.011; wv)
 opener.addheaders = [("User-agent", useragent)]
 
 
-@register(pattern="^/google (.*)")
+@app.on_message(filters.command(["google"]) & ~filters.private)
 async def _(event):
     if event.fwd_from:
         return
@@ -51,7 +52,7 @@ async def _(event):
     )
 
 
-@register(pattern="^/img (.*)")
+@app.on_message(filters.command(["img"]) & ~filters.private)
 async def img_sampler(event):
     if event.fwd_from:
         return
