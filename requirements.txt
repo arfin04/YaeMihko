@@ -8,6 +8,7 @@ asyncio==3.4.3
 # ==== B ====
 beautifulsoup4==4.12.2
 bleach==6.1.0
+bing_image_downloader==1.1.2
 
 # ==== C ====
 cachetools==5.3.2
