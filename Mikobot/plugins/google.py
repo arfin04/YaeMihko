@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 from PIL import Image
 from search_engine_parser import GoogleSearch
 
-from Mikobot  tbot
+from Mikobot tbot
 from Mikobot.events import register
 
 opener = urllib.request.build_opener()
