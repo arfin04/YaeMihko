@@ -437,7 +437,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
 async def repo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     source_link = "https://github.com/Infamous-Hydra/YaeMiko"
-    message_text = f"*Here is the link for the public source repo*:\n\n{source_link}"
+    message_text = f"*REPO IS NOT PUBLIC YET"
 
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
