@@ -11,7 +11,7 @@ from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler
 
 from Mikobot import LOGGER, dispatcher
-from Mikobot.modules.helper_funcs.chat_status import dev_plus
+from Mikobot.plugins.helper_funcs.chat_status import dev_plus
 
 namespaces = {}
 
