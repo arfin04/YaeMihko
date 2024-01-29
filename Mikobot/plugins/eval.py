@@ -19,7 +19,7 @@ from contextlib import redirect_stdout
 
 from telegram.constants import ParseMode
 from telegram.ext import CommandHandler
-from telegram.ext.dispatcher import run_async
+from telegram.ext import run_async
 
 from Mikobot import dispatcher, LOGGER
 from Mikobot.plugins.helper_funcs.chat_status import dev_plus
