@@ -124,9 +124,9 @@ def clear(update: Update, context: CallbackContext):
     send("Cleared locals.", bot, update)
 
 
-EVAL_HANDLER = CommandHandler(("e", "ev", "eva", "eval"), evaluate, block=false)
-EXEC_HANDLER = CommandHandler(("x", "ex", "exe", "exec", "py"), execute, block=false)
-CLEAR_HANDLER = CommandHandler("clearlocals", clear, block=false)
+EVAL_HANDLER = CommandHandler(("e", "ev", "eva", "eval"), evaluate, block=False)
+EXEC_HANDLER = CommandHandler(("x", "ex", "exe", "exec", "py"), execute, block=False)
+CLEAR_HANDLER = CommandHandler("clearlocals", clear, block=False)
 
 dispatcher.add_handler(EVAL_HANDLER)
 dispatcher.add_handler(EXEC_HANDLER)
