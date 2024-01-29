@@ -1,4 +1,4 @@
-import io
+"""import io
 import os
 # Common imports for eval
 import sys
@@ -135,3 +135,4 @@ dispatcher.add_handler(exec_handler)
 dispatcher.add_handler(clear_handler)
 
 __mod_name__ = "Eval Module"
+"""
