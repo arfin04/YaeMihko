@@ -49,7 +49,7 @@ START_BTN = [
     [
         InlineKeyboardButton(text="DETAILS", callback_data="Miko_"),
         InlineKeyboardButton(text="AI", callback_data="ai_handler"),
-        InlineKeyboardButton(text="SUPPORT", callback_data="SUPPORT_CHAT"),
+        InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/Divine_x_soul"),
     ],
     [
         InlineKeyboardButton(text="CREATOR", url=f"tg://user?id={OWNER_ID}"),
