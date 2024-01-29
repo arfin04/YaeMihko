@@ -8,10 +8,8 @@ from contextlib import redirect_stdout
 
 from Mikobot import LOGGER, dispatcher
 from Mikobot.plugins.helper_funcs.chat_status import dev_plus
-from telegram.constants import ParseMode
-from telegram import Update 
-from telegram.ext import CallbackContext, CommandHandler
-from telegram import run_async
+from telegram import Update,ParseMode 
+from telegram.ext import CallbackContext, CommandHandler, run_async
 
 namespaces = {}
 
