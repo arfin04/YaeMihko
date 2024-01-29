@@ -6,12 +6,11 @@ import textwrap
 import traceback
 from contextlib import redirect_stdout
 
-from telegram.constants import ParseMode
-from telegram import Update 
-from telegram.ext import CallbackContext, CommandHandler
-
 from Mikobot import LOGGER, dispatcher
 from Mikobot.plugins.helper_funcs.chat_status import dev_plus
+from telegram.constants import ParseMode
+from telegram import Update 
+from telegram.ext import CallbackContext, CommandHandler, run_async
 
 namespaces = {}
 
@@ -51,12 +50,14 @@ def send(msg, bot, update):
 
 
 @dev_plus
+@run_async
 def evaluate(update: Update, context: CallbackContext):
     bot = context.bot
     send(do(eval, bot, update), bot, update)
 
 
 @dev_plus
+@run_async
 def execute(update: Update, context: CallbackContext):
     bot = context.bot
     send(do(exec, bot, update), bot, update)
@@ -76,7 +77,7 @@ def do(func, bot, update):
 
     os.chdir(os.getcwd())
     with open(
-        os.path.join(os.getcwd(), "Mikobot/plugins/helper_funcs/temp.txt"), "w"
+        os.path.join(os.getcwd(), "Mikobot/plugins/helper_funcs/temp.txt"), "w",
     ) as temp:
         temp.write(body)
 
@@ -94,7 +95,7 @@ def do(func, bot, update):
     try:
         with redirect_stdout(stdout):
             func_return = func()
-    except Exception:
+    except Exception as e:
         value = stdout.getvalue()
         return f"{value}{traceback.format_exc()}"
     else:
@@ -115,6 +116,7 @@ def do(func, bot, update):
 
 
 @dev_plus
+@run_async
 def clear(update: Update, context: CallbackContext):
     bot = context.bot
     log_input(update)
@@ -124,12 +126,12 @@ def clear(update: Update, context: CallbackContext):
     send("Cleared locals.", bot, update)
 
 
-EVAL_HANDLER = CommandHandler(("e", "ev", "eva", "eval"), evaluate, block=False)
-EXEC_HANDLER = CommandHandler(("x", "ex", "exe", "exec", "py"), execute, block=False)
-CLEAR_HANDLER = CommandHandler("clearlocals", clear, block=False)
+EVAL_HANDLER = CommandHandler(("e", "ev", "eva", "eval"), evaluate)
+EXEC_HANDLER = CommandHandler(("x", "ex", "exe", "exec", "py"), execute)
+CLEAR_HANDLER = CommandHandler("clearlocals", clear)
 
 dispatcher.add_handler(EVAL_HANDLER)
 dispatcher.add_handler(EXEC_HANDLER)
 dispatcher.add_handler(CLEAR_HANDLER)
 
-__mod_name__ = "Eᴠᴀʟ ᴍᴏᴅᴜʟᴇ"
+__mod_name__ = "Eval Module"
