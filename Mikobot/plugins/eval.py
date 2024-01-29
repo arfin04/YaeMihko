@@ -10,7 +10,8 @@ from Mikobot import LOGGER, dispatcher
 from Mikobot.plugins.helper_funcs.chat_status import dev_plus
 from telegram.constants import ParseMode
 from telegram import Update 
-from telegram.ext import CallbackContext, CommandHandler, run_async
+from telegram.ext import CallbackContext, CommandHandler
+from telegram import run_async
 
 namespaces = {}
 
