@@ -180,20 +180,15 @@ function = dispatcher.add_handler
 
 # <================================================ BOOT MESSAGE=======================================================>
 ALIVE_MSG = """
-💫 *MY SYSTEM IS STARTING, PLEASE WAIT FOR SOMETIME TO COMPLETE BOOT!*
-
-
-*IF COMMANDS DON'T WORK CHECK THE LOGS*
-"""
+MY SYSTEM IS GOING OFFLINE FOR FEW MINUTES PLS WAIT 🫸 🫷"""
 
 ALIVE_IMG = [
-    "https://telegra.ph/file/40b93b46642124605e678.jpg",
-    "https://telegra.ph/file/01a2e0cd1b9d03808c546.jpg",
-    "https://telegra.ph/file/ed4385c26dcf6de70543f.jpg",
-    "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg",
-    "https://telegra.ph/file/cce9038f6a9b88eb409b5.jpg",
-    "https://telegra.ph/file/262c86393730a609cdade.jpg",
-    "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg",
+        "https://graph.org/file/4a96c73834f145b5ea9db.mp4",
+    "https://graph.org/file/2da4f5dd8aa64d0515f1b.mp4",
+    "https://graph.org/file/84924a6ce0a5fbdca737a.mp4",
+    "https://graph.org/file/2727191b78654454bbfc7.mp4",
+    "https://graph.org/file/41aee647c6ada066f46e2.mp4",
+    "https://graph.org/file/3401071c42a716fe2ee87.mp4",
 ]
 # <=======================================================================================================>
 
