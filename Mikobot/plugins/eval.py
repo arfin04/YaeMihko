@@ -8,7 +8,7 @@ from io import StringIO
 from time import time
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from Mikobot import Bot as app
+from Mikobot import app
 from variables import Config
 
 OWNER_ID = Config.OWNER_ID
