@@ -9,7 +9,9 @@ from time import time
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Mikobot import Bot as app
-from variables import OWNER_ID
+from variables import Config
+
+OWNER_ID = Config.OWNER_ID
 
 async def aexec(code, client, message):
     exec(
