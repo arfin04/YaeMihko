@@ -34,7 +34,7 @@ class Config(object):
     TOKEN = "2323839365:AAFgfdadqawlfdsM7slOa33eM_ghop"  # Get bot token from @BotFather on Telegram
 
     # Owner's Telegram user ID (Must be an integer)
-    OWNER_ID = 5907205317
+    OWNER_ID = 6984522418
     # <=======================================================================================================>
 
     # <================================================ OPTIONAL ======================================================>
