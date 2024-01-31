@@ -18,7 +18,7 @@ from telegram.constants import ParseMode
 from telegram.ext import Application, ApplicationBuilder
 from telethon import TelegramClient, events
 from telethon.sessions import MemorySession
-
+from variables import Config
 # <=======================================================================================================>
 
 # <================================================= NECESSARY ======================================================>
