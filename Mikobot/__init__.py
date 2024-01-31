@@ -174,7 +174,7 @@ Mikobot = Client(
            "sumedha" ,
            api_id=Config.API_ID,
            api_hash=Config.API_HASH,
-           bot_token=Config.BOT_TOKEN
+           bot_token=Config.TOKEN
 # <=======================================================================================================>
 
 # <============================================== INITIALIZE APPLICATION =========================================================>
