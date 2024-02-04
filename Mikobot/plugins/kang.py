@@ -10,7 +10,7 @@ from telegram.error import TelegramError
 from telegram.constants import ParseMode
 from telegram.ext import CallbackContext
 from telegram.helpers import mention_html
-from Mikobot.plugins.helper_funcs.decor import zaid
+from Mikobot import app
 
 
 
