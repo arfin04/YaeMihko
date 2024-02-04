@@ -15,7 +15,7 @@ from Mikobot.plugins.helper_funcs.decor import zaid
 
 
 
-@zaid(command=["steal", "kang"])
+@app.on_message(filters.command(["kang"]) & ~filters.private)
 def kang(update: Update, context: CallbackContext):  # sourcery no-metrics
     global ppref
     msg = update.effective_message
