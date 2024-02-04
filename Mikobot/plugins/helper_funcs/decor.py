@@ -1,4 +1,4 @@
-from Telegram.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from Mikobot.plugins.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 from telegram.ext import CommandHandler, MessageHandler, CallbackQueryHandler, InlineQueryHandler
 from telegram.ext.filters import BaseFilter
 from Mikobot import dispatcher as d
