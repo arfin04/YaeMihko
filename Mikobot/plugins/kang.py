@@ -5,8 +5,9 @@ from io import BytesIO
 from urllib.error import HTTPError
 
 from PIL import Image
-from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
+from telegram import (InlineKeyboardButton, InlineKeyboardMarkup,
                       TelegramError, Update)
+from telegram.constants import ParseMode
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import mention_html
 from Mikobot.plugins.helper_funcs.decor import zaid
