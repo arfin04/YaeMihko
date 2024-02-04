@@ -9,7 +9,7 @@ from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, Update)
 from telegram.error import TelegramError
 from telegram.constants import ParseMode
 from telegram.ext import CallbackContext
-from telegram.utils.helpers import mention_html
+from telegram.helpers import mention_html
 from Mikobot.plugins.helper_funcs.decor import zaid
 
 
