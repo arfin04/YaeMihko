@@ -179,4 +179,21 @@ __help__ = """
 
 » /karma [OFF|ON] - `Enable or disable karma system in your chat.`
 """
+
+__mod_name__ = "MUSIC"
+__help__ = """
+
+➠ *PLAY* - Use It to play any music.
+➠ *pause* - Use it to pause a music
+
+for all the commands do /mhelp
+
+➠ *Commands*
+
+» /play:- `play any music 
+» /pause:- `pause the on going music
+» /skip :- `skip the ongoing music to play next track
+
+
+"""
 # <================================================ END =======================================================>
