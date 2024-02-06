@@ -35,7 +35,7 @@ PM_START_TEXT = "✨ *ɪ ᴀᴍ ɴᴇᴢᴜᴋᴏ, ᴀ ᴅᴇᴍᴏɴ ꜱʟᴀʏ
 START_BTN = [
     [
         InlineKeyboardButton(
-            text="⇦ ADD ME ⇨",
+            text="⇦ KIDNAP ME ⇨",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
