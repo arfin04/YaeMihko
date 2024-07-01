@@ -10,31 +10,31 @@ class Config(object):
 
     # <================================================ REQUIRED ======================================================>
     # Telegram API configuration
-    API_ID = 6433468  # Get this value from my.telegram.org/apps
-    API_HASH = "7895dfd061f656367ccab30032"
+    API_ID = "22920902"  # Get this value from my.telegram.org/apps
+    API_HASH = "9b6416fcccd2b728f1661877ca9a14cf"
 
     # Database configuration (PostgreSQL)
-    DATABASE_URL = "postgres://ierjlkr:OG4dxzO67Zret3Zii43Hhvujkg89WVry0n9KsHE@karma.db.elephantsql.com/ierjlkr"
+    DATABASE_URL = "postgresql://raidenistriku_owner:W2s8DraLEFvt@ep-quiet-truth-a4d6kmc9.us-east-1.aws.neon.tech/raidenistriku"
 
     # Event logs chat ID and message dump chat ID
-    EVENT_LOGS = -1001629811868
-    MESSAGE_DUMP = -1001629811868
+    EVENT_LOGS = "-1002095596112"
+    MESSAGE_DUMP = "-1002095596112"
 
     # MongoDB configuration
-    MONGO_DB_URI = "mongodb+srv://t45:t45@cluster0.plfylpo.mongodb.net/?retryWrites=true&w=majority"
+    MONGO_DB_URI = "mongodb+srv://Nonalcoholic:8eVPSTcJa2c3FkH@cluster0.bprf1b2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
     # Support chat and support ID
-    SUPPORT_CHAT = "ProjectCodeXSupport"
-    SUPPORT_ID = -1001629811868
+    SUPPORT_CHAT = "gcsupport_Ryo_bot_id"
+    SUPPORT_ID = "-1002095596112"
 
     # Database name
     DB_NAME = "MikoDB"
 
     # Bot token
-    TOKEN = "2323839365:AAFgfdadqawlfdsM7slOa33eM_ghop"  # Get bot token from @BotFather on Telegram
+    TOKEN = "7125789785:AAGfwpkCD5ZVTmHfr9XJ3pQmhNfpZBFGhCk"  # Get bot token from @BotFather on Telegram
 
     # Owner's Telegram user ID (Must be an integer)
-    OWNER_ID = 6984522418
+    OWNER_ID = "6995317382"
     # <=======================================================================================================>
 
     # <================================================ OPTIONAL ======================================================>
@@ -44,9 +44,9 @@ class Config(object):
     BL_CHATS = []
 
     # User IDs of sudo users, dev users, support users, tiger users, and whitelist users
-    DRAGONS = []  # Sudo users
-    DEV_USERS = []  # Dev users
-    DEMONS = []  # Support users
+    DRAGONS = [5965193875, 6979724550, 6071124527]  # Sudo users
+    DEV_USERS = [6995317382]  # Dev users
+    DEMONS = [6995317382]  # Support users
     TIGERS = []  # Tiger users
     WOLVES = []  # Whitelist users
 
